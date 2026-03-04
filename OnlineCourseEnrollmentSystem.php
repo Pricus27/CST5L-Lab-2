@@ -109,10 +109,11 @@ include 'logic.php';
                                                 <?php while ($row = mysqli_fetch_assoc($result)): ?>
                                                     <tr>
                                                         <td><?php echo htmlspecialchars($row['first_name'] . ' ' . $row['last_name']); ?></td>
-                                                        <td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary btn-sm ms-2">
                                                             <?php echo htmlspecialchars($row['course_name']); ?>
-                                                            <button type="button" class="btn btn-primary btn-sm ms-2"></button>
-                                                        </td>
+                                                        </button>
+                                                    </td>
                                                         <td><?php echo htmlspecialchars($row['entry_date']); ?></td>
                                                         <td>
                                                             <a href="OnlineCourseEnrollmentSystem.php?edit=<?php echo (int) $row['id']; ?>" class="btn btn-sm btn-outline-primary">Edit</a>
