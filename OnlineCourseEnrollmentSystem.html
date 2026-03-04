@@ -12,8 +12,7 @@
 <body>
 
     <div class="container py-1">
-    
-    <div class="col-lg-4 d-flex align-items-stretch">
+    <div class="col-lg-4 d-flex align-items-stretch" style="margin-top: 100px;">
 
         <div class="card w-100">
             <div class="card-body p-4">
@@ -32,13 +31,15 @@
                     <label for="CourseName" class="form-label">Course Name</label>
                     <input id="CourseName" type="text" class="form-control" placeholder="ex: Computer Science">
 
-                    <label for="EnrollmentDate" class="form-label">Enrollment Date</label>
-                    <input type="text" class="form-control datepicker" data-provide="datepicker">
+                    <label for="EnrollmentDate" class="form-label">Enrollment Date</label> <br>
+                    <input type="date" id="EnrollmentDate"  style="width: 100%;" name="EnrollmentDate" value="mm/dd/yyyy" min="2020-01-01" max="2030-12-31" /> <br>
 
 
-                    <button id="submitBtn" class="btn btn-primary w-100 mt-2">Submit Name</button>
-                    <p id="result" class="mt-3 mb-0"></p>
-                </form>
+
+                        <button id="submitBtn" class="btn btn-primary w-100 mt-2">Complete Enrollment</button>
+                        <p id="result" class="mt-3 mb-0"></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
