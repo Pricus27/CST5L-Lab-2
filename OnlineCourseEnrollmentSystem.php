@@ -99,7 +99,7 @@ include 'logic.php';
                                         <table class="table table-hover mb-0">
                                             <thead class="table-light">
                                                 <tr>
-                                                    <th>Name</th>
+                                                    <th>Name</th>   
                                                     <th>Course</th>
                                                     <th>Entry Date</th>
                                                     <th>Actions</th>
@@ -111,7 +111,7 @@ include 'logic.php';
                                                         <td><?php echo htmlspecialchars($row['first_name'] . ' ' . $row['last_name']); ?></td>
                                                         <td>
                                                             <?php echo htmlspecialchars($row['course_name']); ?>
-                                                            <button type="button" class="btn btn-primary btn-sm ms-2">Enrolled</button>
+                                                            <button type="button" class="btn btn-primary btn-sm ms-2"></button>
                                                         </td>
                                                         <td><?php echo htmlspecialchars($row['entry_date']); ?></td>
                                                         <td>
@@ -136,3 +136,4 @@ include 'logic.php';
     </div>
 </body>
 </html>
+
